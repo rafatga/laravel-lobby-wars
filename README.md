@@ -49,7 +49,7 @@ Application has several enpoints
     <tbody>
         <tr>
             <td>GET</td>
-            <td><a href="#">/api/v1/schools</a></td>
+            <td><a href="#">/api/v1/trials</a></td>
             <td></td>
             <td><i>array of Trials</i></td>
             <td>200</td>
