@@ -92,3 +92,7 @@ Response example
 }
 ```
 
+
+## Screen Shot
+
+![lobby-result](./docs/lobby-result.png?raw=true "Result")
