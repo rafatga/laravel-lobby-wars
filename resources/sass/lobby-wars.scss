@@ -1,0 +1,105 @@
+@import "reset";
+
+/**
+ * Common components
+ */
+
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  padding: 5px;
+}
+
+.generic-button {
+  border: dotted 6px;
+  text-align: center;
+  cursor: pointer;
+  &.submit-trial {
+    border-color: #0E9A00;
+  }
+
+  &.new-trial {
+    border-color: #0E0EFF;
+  }
+}
+
+
+/**
+ * Trial component
+ */
+.trial-component {
+  margin-top: 30px;
+}
+
+
+/**
+ * Start trial component
+ */
+.start-trial-component {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/**
+ * Team component
+ */
+.team-component {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+/**
+ * Role List component
+ */
+.role-list-component {
+  margin-top: 15px;
+  .grid-container {
+    padding-bottom: 0px;
+  }
+  .role-button {
+    cursor: pointer;
+  }
+}
+
+/**
+ * Contract component
+ */
+.contract-component {
+  margin-top: 15px;
+  .signatures-input {
+    margin-top: 5px;
+    width: 50%;
+  }
+}
+
+/**
+ * Contract Points component
+ */
+.team-points-component {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/**
+ * Trial List component
+ */
+.trial-list-component {
+  margin-top: 30px;
+  text-align: center;
+  ul {
+    display: inline-block;
+  }
+}

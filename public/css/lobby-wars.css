@@ -1,0 +1,282 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colors to suit your needs */
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colors to suit your needs */
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border color to suit your needs */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/**
+ * Common components
+ */
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  padding: 5px;
+}
+
+.generic-button {
+  border: dotted 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.generic-button.submit-trial {
+  border-color: #0E9A00;
+}
+
+.generic-button.new-trial {
+  border-color: #0E0EFF;
+}
+
+/**
+ * Trial component
+ */
+
+.trial-component {
+  margin-top: 30px;
+}
+
+/**
+ * Start trial component
+ */
+
+.start-trial-component {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/**
+ * Team component
+ */
+
+.team-component {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+/**
+ * Role List component
+ */
+
+.role-list-component {
+  margin-top: 15px;
+}
+
+.role-list-component .grid-container {
+  padding-bottom: 0px;
+}
+
+.role-list-component .role-button {
+  cursor: pointer;
+}
+
+/**
+ * Contract component
+ */
+
+.contract-component {
+  margin-top: 15px;
+}
+
+.contract-component .signatures-input {
+  margin-top: 5px;
+  width: 50%;
+}
+
+/**
+ * Contract Points component
+ */
+
+.team-points-component {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/**
+ * Trial List component
+ */
+
+.trial-list-component {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.trial-list-component ul {
+  display: inline-block;
+}
+
