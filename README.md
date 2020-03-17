@@ -25,3 +25,70 @@ php artisan migrate:fresh --seed
 php vendor/bin/phpunit
 ```
 
+
+## API Endpoints
+
+Application has several enpoints
+
+### Trial
+
+<b>Trial endpoints.</b>
+
+<i>Base URL:</i> ```/api/v1/trials```
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>METHOD</td>
+            <th>ENDPOINT</td>
+            <th>PARAMETERS GET</td>
+            <th>RETURNS</td>
+            <th>SUCCESS CODE</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GET</td>
+            <td><a href="#">/api/v1/schools</a></td>
+            <td></td>
+            <td><i>array of Trials</i></td>
+            <td>200</td>
+        </tr>
+    </tbody>
+</table>
+
+Response example
+
+```json
+{
+    "trials": [
+        {
+            "id": 1,
+            "title": "Team A (7 points) has won to Team B (3 points)",
+            "teams": [
+              {
+                "id": 3,
+                "name": "Team A",
+                "contracts": "VVVVVVV",
+                "points": 7,
+                "is_winner": true,
+                "trial_id": 2,
+                "created_at": "2020-03-17T15:45:06.000000Z",
+                "updated_at": "2020-03-17T15:45:06.000000Z"
+              },
+              {
+                "id": 4,
+                "name": "Team B",
+                "contracts": "K",
+                "points": 5,
+                "is_winner": null,
+                "trial_id": 2,
+                "created_at": "2020-03-17T15:45:06.000000Z",
+                "updated_at": "2020-03-17T15:45:06.000000Z"
+              }
+            ]
+        }
+    ]
+}
+```
+
