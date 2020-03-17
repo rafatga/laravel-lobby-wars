@@ -8,6 +8,8 @@
 
 
 ## Installation
+- composer install
+
 - Copy .env.example and name it .env
 
 - Add database configuration
@@ -16,3 +18,10 @@
 ```bash
 php artisan migrate:fresh --seed
 ```
+
+
+## Test
+```bash
+php vendor/bin/phpunit
+```
+
